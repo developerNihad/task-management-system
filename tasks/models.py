@@ -2,6 +2,9 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
+due_date = models.DateField(null=True, blank=True)
+
+
 class Task(models.Model):
 
     STATUC_CHOICES = [
